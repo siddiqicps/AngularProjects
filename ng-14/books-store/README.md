@@ -5,13 +5,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Application setup
 
 Open a git bash and run the following command
-git clone --single-branch --branch master https://github.com/siddiqicps/AngularProjects.git
+`git clone --single-branch --branch master https://github.com/siddiqicps/AngularProjects.git`
 
 After cloning the repository navigate to books-store directory
+`cd AngularProjects/ng-14/books-store`
 
-cd AngularProjects/ng-14/books-store
-
-inside books-store directory run npm install command
+inside books-store directory run `npm install` command
 
 ## Development server
 
