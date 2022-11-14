@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>{{data.popup_title}}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="listForm" class="example-form" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <input matInput placeholder="List Title" type="text" required formControlName="list_title"  name="list_title">
+    </mat-form-field>
+    <button mat-raised-button type="submit" color="primary" [disabled]="!listForm.valid">Save</button>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button class="close" (click)="onNoClick()" color="warn">Cancel</button>
+</div>

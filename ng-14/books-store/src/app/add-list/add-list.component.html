@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>{{data.popup_title}}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="addListForm" class="example-form" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+        <mat-select matInput placeholder="Select List" required formControlName="_id"  name="_id">
+            <mat-option *ngFor="let list of fav_lists" [value]="list._id">
+            {{ list.list_title }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <button mat-raised-button type="submit" color="primary" [disabled]="!addListForm.valid">Add</button>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button class="close" (click)="onNoClick()" color="warn">Cancel</button>
+</div>

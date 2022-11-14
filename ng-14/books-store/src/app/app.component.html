@@ -1,0 +1,19 @@
+<mat-sidenav-container class="background-primary">
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+     <div fxHide.gt-xs>
+       <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+     <div style="margin-right: 20px;">
+       <a>
+          Books Store
+       </a>
+     </div>
+    </mat-toolbar>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
